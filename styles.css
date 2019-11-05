@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #ebebeb;
 }
 /* Link Styles */
 
@@ -66,27 +66,29 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(360deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: rgba(209,209,209,.6);
+  border: 2px solid rgb(0, 0, 0);
   color: black;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 2px 15px;
+  border-radius: 10px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(67, 67, 67, .6);
+  color: rgb(247, 247, 244);
 }
 .card {
   margin: 30px;
@@ -110,14 +112,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #0000009d;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #5fb1e7;
 }
 
 footer {
@@ -138,31 +140,39 @@ footer ul {
 }
 
 footer ul li {
-  display: inline-block;
+  display: flex;
 }
 
 a.social {
-  display: inline-block;
+  display: flex;
+  height: 40px;
+  width: 40px;
   text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background: url(images/twitter.svg) no-repeat;
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background: url(images/linkedin.svg) no-repeat;
+  margin: 0 10px;
 }
 a.github {
-  background-image: url(images/github.svg);
+  background: url(images/github.svg) no-repeat;
 }
 a.social:hover {
   opacity: 1;
 }
+
+.social-nav {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
 .clearfix {
   clear: both;
 }
@@ -198,9 +208,11 @@ a.social:hover {
   }
 
   footer {
+    display: flex;
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+    flex-direction: column;
   }
 
 }
