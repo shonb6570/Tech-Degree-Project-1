@@ -15,10 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
-}
-a:hover {
-  color: #6633ff;
+  color: rgb(48, 178, 238);
 }
 
 /* Section Styles */
@@ -101,7 +98,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: rgb(48, 178, 238);
 }
 
 ul.skills {
